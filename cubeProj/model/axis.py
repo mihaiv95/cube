@@ -27,7 +27,11 @@ class Axis:
 
         glMatrixMode(GL_MODELVIEW)
         glPushMatrix()
+<<<<<<< HEAD
         gluLookAt(0,0,-6,0,0,0,0,1,0)
+=======
+        gluLookAt(-2,2,-6,0,0,0,0,1,0)
+>>>>>>> afb38591948d4a361e50e98e356182b31fb7449c
         glMultMatrixf(self._identity_mat)
         color = 0
         colors=[(1, 0, 0),

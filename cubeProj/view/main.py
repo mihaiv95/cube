@@ -37,6 +37,7 @@ sq_edges=[(0,1),
 square = Square(sq_vert, sq_edges, (1,1,0))
 
 
+<<<<<<< HEAD
 bt_list = [Button(SCREEN_SIZE[0]-50, 50, 50, 1, 'view/test_image.png'),
            Button(SCREEN_SIZE[0]-110, 50, 50, 2, 'view/test_image.png'),
            Button(SCREEN_SIZE[0]-50, 110, 50, 3, 'view/test_image.png'),
@@ -47,6 +48,18 @@ bt_list = [Button(SCREEN_SIZE[0]-50, 50, 50, 1, 'view/test_image.png'),
            Button(SCREEN_SIZE[0]-110, 230, 50, 8, 'view/test_image.png'),
            Button(SCREEN_SIZE[0]-50, 290, 50, 9, 'view/test_image.png'),
            Button(SCREEN_SIZE[0]-110, 290, 50, 10, 'view/test_image.png')
+=======
+bt_list = [Button(750, 50, 50, 1, 'view/test_image.png'),
+           Button(690, 50, 50, 2, 'view/test_image.png'),
+           Button(750, 110, 50, 3, 'view/test_image.png'),
+           Button(690, 110, 50, 4, 'view/test_image.png'),
+           Button(750, 170, 50, 5, 'view/test_image.png'),
+           Button(690, 170, 50, 6, 'view/test_image.png'),
+           Button(750, 230, 50, 7, 'view/test_image.png'),
+           Button(690, 230, 50, 8, 'view/test_image.png'),
+           Button(750, 290, 50, 9, 'view/test_image.png'),
+           Button(690, 290, 50, 10, 'view/test_image.png')
+>>>>>>> afb38591948d4a361e50e98e356182b31fb7449c
            ]
 
 
@@ -72,9 +85,12 @@ edges = (Edge(vertex0, vertex1),
          Edge(vertex5, vertex1),
          Edge(vertex5, vertex4),
          Edge(vertex5, vertex7),
+<<<<<<< HEAD
          Edge(Vertex(0,0,0),Vertex(-2,0,0)),
          Edge(Vertex(0,0,0),Vertex(0,2,0)),
          Edge(Vertex(0,0,0),Vertex(0,0,-2)),
+=======
+>>>>>>> afb38591948d4a361e50e98e356182b31fb7449c
          )
 
 cube = Cube(edges)
@@ -101,6 +117,10 @@ def main():
 
     # loadTexture()
 
+<<<<<<< HEAD
+=======
+    # gluLookAt(-1.5, 2, -6, 0, 0, 0, 0, 1, 0)
+>>>>>>> afb38591948d4a361e50e98e356182b31fb7449c
     for button in bt_list:
         button.load_texture(button._path)
     square.translate()
