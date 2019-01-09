@@ -11,6 +11,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Jetbrains
+
+*.idea/
+
 # Distribution / packaging
 .Python
 build/
