@@ -7,10 +7,7 @@ class Cube:
     def __init__(self, edges):
         self._trans_mat = identity_mat44()
         self._rotation_mat = identity_mat44()
-<<<<<<< HEAD
         self._global_mat = identity_mat44()
-=======
->>>>>>> afb38591948d4a361e50e98e356182b31fb7449c
         self._edges = edges
         self.tx = 0
         self.ty = 0
@@ -32,15 +29,9 @@ class Cube:
     def render(self, local_rot):
         glMatrixMode(GL_MODELVIEW)
         glPushMatrix()
-<<<<<<< HEAD
         gluLookAt(0, 0, -6, 0, 0, 0, 0, 1, 0)
         glMultMatrixf(self._global_mat)
         # glMultMatrixf(self._rotation_mat)
-=======
-        gluLookAt(-2, 2, -6, 0, 0, 0, 0, 1, 0)
-        glMultMatrixf(self._trans_mat)
-        glMultMatrixf(self._rotation_mat)
->>>>>>> afb38591948d4a361e50e98e356182b31fb7449c
 
         glPushMatrix()
         self.move_x()
@@ -54,11 +45,7 @@ class Cube:
             self.rotate_local()
         else:
             self.rotate_global()
-<<<<<<< HEAD
         self._global_mat = glGetFloatv(GL_MODELVIEW_MATRIX)
-=======
-        self._rotation_mat = glGetFloatv(GL_MODELVIEW_MATRIX)
->>>>>>> afb38591948d4a361e50e98e356182b31fb7449c
         glPopMatrix()
 
         self.draw()
@@ -72,7 +59,6 @@ class Cube:
         glPopMatrix()
 
     def move_x(self):
-<<<<<<< HEAD
         glLoadMatrixf(self._global_mat)
         glTranslatef(self.tx, 0, 0)
         self._global_mat = glGetFloatv(GL_MODELVIEW_MATRIX)
@@ -89,35 +75,13 @@ class Cube:
 
     def rotate_local(self):
         glMultMatrixf(self._global_mat)
-=======
-        glLoadMatrixf(self._trans_mat)
-        glTranslatef(self.tx, 0, 0)
-        self._trans_mat = glGetFloatv(GL_MODELVIEW_MATRIX)
-
-    def move_y(self):
-        glLoadMatrixf(self._trans_mat)
-        glTranslatef(0, self.ty, 0)
-        self._trans_mat = glGetFloatv(GL_MODELVIEW_MATRIX)
-
-    def move_z(self):
-        glLoadMatrixf(self._trans_mat)
-        glTranslatef(0, 0, self.tz)
-        self._trans_mat = glGetFloatv(GL_MODELVIEW_MATRIX)
-
-    def rotate_local(self):
-        glMultMatrixf(self._rotation_mat)
->>>>>>> afb38591948d4a361e50e98e356182b31fb7449c
         glRotatef(self.rx, 1, 0, 0)
         glRotatef(self.ry, 0, 1, 0)
 
     def rotate_global(self):
         glRotatef(self.rx, 1, 0, 0)
         glRotatef(self.ry, 0, 1, 0)
-<<<<<<< HEAD
         glMultMatrixf(self._global_mat)
-=======
-        glMultMatrixf(self._rotation_mat)
->>>>>>> afb38591948d4a361e50e98e356182b31fb7449c
 
     def stop(self):
         self.tx = 0
