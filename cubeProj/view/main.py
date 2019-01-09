@@ -37,16 +37,16 @@ sq_edges=[(0,1),
 square = Square(sq_vert, sq_edges, (1,1,0))
 
 
-bt_list = [Button(SCREEN_SIZE[0]-50, 50, 50, 1, 'view/test_image.png'),
-           Button(SCREEN_SIZE[0]-110, 50, 50, 2, 'view/test_image.png'),
-           Button(SCREEN_SIZE[0]-50, 110, 50, 3, 'view/test_image.png'),
-           Button(SCREEN_SIZE[0]-110, 110, 50, 4, 'view/test_image.png'),
-           Button(SCREEN_SIZE[0]-50, 170, 50, 5, 'view/test_image.png'),
-           Button(SCREEN_SIZE[0]-110, 170, 50, 6, 'view/test_image.png'),
-           Button(SCREEN_SIZE[0]-50, 230, 50, 7, 'view/test_image.png'),
-           Button(SCREEN_SIZE[0]-110, 230, 50, 8, 'view/test_image.png'),
-           Button(SCREEN_SIZE[0]-50, 290, 50, 9, 'view/test_image.png'),
-           Button(SCREEN_SIZE[0]-110, 290, 50, 10, 'view/test_image.png'),
+bt_list = [Button(SCREEN_SIZE[0]-50, 50, 50, 1, 'test_image.png'),
+           Button(SCREEN_SIZE[0]-110, 50, 50, 2, 'test_image.png'),
+           Button(SCREEN_SIZE[0]-50, 110, 50, 3, 'test_image.png'),
+           Button(SCREEN_SIZE[0]-110, 110, 50, 4, 'test_image.png'),
+           Button(SCREEN_SIZE[0]-50, 170, 50, 5, 'test_image.png'),
+           Button(SCREEN_SIZE[0]-110, 170, 50, 6, 'test_image.png'),
+           Button(SCREEN_SIZE[0]-50, 230, 50, 7, 'test_image.png'),
+           Button(SCREEN_SIZE[0]-110, 230, 50, 8, 'test_image.png'),
+           Button(SCREEN_SIZE[0]-50, 290, 50, 9, 'test_image.png'),
+           Button(SCREEN_SIZE[0]-110, 290, 50, 10, 'test_image.png'),
            ]
 
 
